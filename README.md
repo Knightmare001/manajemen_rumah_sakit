@@ -14,10 +14,8 @@ Project dibuat dan dijalankan secara **local (localhost)** menggunakan **XAMPP a
 ## ✨ Fitur
 - 🔐 Login Admin
 - 👤 Manajemen User
-- 🧑‍⚕️ Manajemen Data Dokter
-- 📅 Manajemen Jadwal Praktik Dokter
 - 🧾 Manajemen Data Pasien
-- 🎨 Tampilan dashboard sederhana & responsive
+- 🎨 Tampilan dashboard sederhana
 
 ---
 
@@ -77,54 +75,10 @@ XAMPP → htdocs/
 Laragon → www/
 
 ### 3️⃣ Buat Database
-CREATE DATABASE klinik;
-USE db_rumah_sakit;
+Buka file sql.txt
 
 ### 4️⃣ Buat Tabel
-
-#Tabel Users
-
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nama VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL
-);
-
-#### - Table Dokter
-
-CREATE TABLE dokter (
-    id_dokter INT AUTO_INCREMENT PRIMARY KEY,
-    nama_dokter VARCHAR(100) NOT NULL,
-    spesialis VARCHAR(100) NOT NULL,
-    hari_praktik VARCHAR(20) NOT NULL,
-    jam_mulai TIME NOT NULL,
-    jam_selesai TIME NOT NULL
-);
-
-INSERT INTO dokter (nama_dokter, spesialis, hari_praktik, jam_mulai, jam_selesai) VALUES
-('Dr. Siti Aminah', 'Umum', 'Senin', '08:00:00', '12:00:00'),
-('Dr. Hartono', 'THT', 'Selasa', '09:00:00', '12:00:00');
-('Dr. Setiawan', 'Gigi', 'Rabu', '09:00:00', '12:00:00');
-
-
-#Table Pasien
-
-CREATE TABLE pasien (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nama VARCHAR(100) NOT NULL,
-    deskripsi_keluhan TEXT NOT NULL,
-    id_dokter INT NOT NULL,
-    hari_praktik VARCHAR(20) NOT NULL,
-    jam_mulai TIME NOT NULL,
-    email VARCHAR(100),
-
-    CONSTRAINT fk_pasien_dokter
-        FOREIGN KEY (id_dokter)
-        REFERENCES dokter(id_dokter)
-        ON DELETE CASCADE
-        ON UPDATE CASCADE
-);
+Buka file sql.txt
 
 ### 5️⃣ Jalankan di browser
 arduino
