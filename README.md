@@ -83,6 +83,7 @@ USE db_rumah_sakit;
 ### 4️⃣ Buat Tabel
 
 #Tabel Users
+
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nama VARCHAR(100) NOT NULL,
@@ -90,7 +91,8 @@ CREATE TABLE users (
     password VARCHAR(255) NOT NULL
 );
 
-###Table Dokter
+#### Table Dokter
+
 CREATE TABLE dokter (
     id_dokter INT AUTO_INCREMENT PRIMARY KEY,
     nama_dokter VARCHAR(100) NOT NULL,
@@ -107,6 +109,7 @@ INSERT INTO dokter (nama_dokter, spesialis, hari_praktik, jam_mulai, jam_selesai
 
 
 #Table Pasien
+
 CREATE TABLE pasien (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nama VARCHAR(100) NOT NULL,
