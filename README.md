@@ -80,6 +80,8 @@ Laragon → www/
 CREATE DATABASE klinik;
 USE db_rumah_sakit;
 
+### 4️⃣ Buat Tabel
+
 #Tabel Users
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -88,7 +90,7 @@ CREATE TABLE users (
     password VARCHAR(255) NOT NULL
 );
 
-#Table Dokter
+####Table Dokter
 CREATE TABLE dokter (
     id_dokter INT AUTO_INCREMENT PRIMARY KEY,
     nama_dokter VARCHAR(100) NOT NULL,
@@ -120,8 +122,6 @@ CREATE TABLE pasien (
         ON DELETE CASCADE
         ON UPDATE CASCADE
 );
-
-### 4️⃣ Konfigurasi koneksi database
 
 ### 5️⃣ Jalankan di browser
 arduino
