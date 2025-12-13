@@ -91,7 +91,7 @@ CREATE TABLE users (
     password VARCHAR(255) NOT NULL
 );
 
-#### Table Dokter
+#### - Table Dokter
 
 CREATE TABLE dokter (
     id_dokter INT AUTO_INCREMENT PRIMARY KEY,
