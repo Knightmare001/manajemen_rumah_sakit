@@ -81,6 +81,4 @@ Buka file sql.txt
 Buka file sql.txt
 
 ### 5️⃣ Jalankan di browser
-arduino
-Salin kode
-http://localhost/nama-folder-project
+http://localhost/manajemen_rumah_sakit
