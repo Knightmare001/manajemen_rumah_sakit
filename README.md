@@ -69,6 +69,7 @@ Project dibuat dan dijalankan secara **local (localhost)** menggunakan **XAMPP a
 ## ⚙️ Cara Menjalankan Project
 
 ### 1️⃣ Download Folder atau ZIPnya
+Pastikan nama foldernya "manajemen_rumah_sakit" jika beda bisa diubah dulu
 ### 2️⃣ Pindahkan ke folder server
 XAMPP → htdocs/
 
