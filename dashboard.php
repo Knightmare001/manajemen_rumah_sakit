@@ -9,7 +9,6 @@ if (!isset($_SESSION['email'])) {
 require_once __DIR__ . "/config/config.php"; // sesuaikan path jika perlu
 
 $doctor_name = $_SESSION["nama"] ?? '';
-$role = $_SESSION['role'] ?? null;
 
 $response_error = null;
 $pasien_list = [];
@@ -177,3 +176,4 @@ if (!$conn) {
 
 </body>
 </html>
+
