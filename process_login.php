@@ -15,7 +15,6 @@ if (mysqli_num_rows($result) === 1) {
     // Simpan ke session
     $_SESSION['nama'] = $user['nama'];    // username / nama user
     $_SESSION['email'] = $user['email'];   // email
-    $_SESSION['role'] = $user['role'];  //role
     $_SESSION['user_id'] = $user['id'];
 
     header("Location: dashboard.php");
@@ -25,3 +24,4 @@ if (mysqli_num_rows($result) === 1) {
     exit();
 }
 ?>
+
