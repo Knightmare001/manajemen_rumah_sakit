@@ -6,7 +6,7 @@ if (!isset($_SESSION['email'])) {
     exit();
 }
 
-require_once __DIR__ . "/config/config.php"; // sesuaikan path jika perlu
+require_once __DIR__ . "/config/config.php";
 
 $doctor_name = $_SESSION["nama"] ?? '';
 
@@ -42,13 +42,10 @@ if (!$conn) {
         }
         mysqli_free_result($res2);
     } else {
-        // jangan overwrite pasien error jika sudah ada
         if (!$response_error) $response_error = "Gagal mengambil dokter: " . mysqli_error($conn);
     }
 }
 
-// Tutup koneksi jika ingin
-// mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>
@@ -176,4 +173,5 @@ if (!$conn) {
 
 </body>
 </html>
+
 
